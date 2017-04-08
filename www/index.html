@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<script src="js/pgb.js"></script>
+		<script src="cordova.js"></script>
+		<!-- <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> -->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="themes/motyw.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	</head>
+	<body onload="init()">
+		
+		<!-- My app main page -->
+		<div data-role="page" id="pageone">
+			<center>
+		
+			<div data-role="header">
+				<h1>Order</h1>
+			</div>
+			
+			<div data-role="main">
+				
+					<label for="text-basic">Name and surname:</label>
+					<input name="text-basic" id="text-basic" value="" type="text" maxlength="30">
+					<label for="date">Date:</label>
+					<input name="date" id="date" value="" type="date">
+					
+					<form> Select product: 
+						<label><input name="radio-choice-0" id="radio-choice-0" type="radio">HP</label>
+						<label><input name="radio-choice-0" id="radio-choice-1" type="radio">LENOVO</label>
+						<label><input name="radio-choice-0" id="radio-choice-2" type="radio">SAMSUNG</label>
+						<label><input name="radio-choice-0" id="radio-choice-3" type="radio">APPLE</label>
+						<label><input name="radio-choice-0" id="radio-choice-4" type="radio">ASUS</label>
+					</form>
+					<label for="number-pattern"> Quantinity: </label>
+					<input name="number" pattern=[0-9]*" id="number-pattern" value="" type="number">
+			</div>
+			
+			<div data-role="footer">
+			<a input type="button">Approve</a>
+			<a input type="button">Reject</a>
+			</div>
+		  
+			</center>
+		</div>	
+	</body>
+</html>
